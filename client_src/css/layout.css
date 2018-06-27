@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Tanek';
+  src: url('/static/font/Tanek.otf');
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Tanek', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+

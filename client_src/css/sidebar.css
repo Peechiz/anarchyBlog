@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'RockSalt';
+  src: url('/static/font/RockSalt.ttf');
+}
+
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  display: inline-grid;
+  grid-template-columns: 1fr 100px;
+  grid-column-start: 1;
+  background-color: #111;
+}
+
+@media (max-width:500px){
+  .sidebar {
+    width: 100vw;
+    grid-template-columns: 1fr 45px;
+  }
+  .sidebar-hide {
+    margin-left: calc(-100vw + 45px) !important;
+  }
+  .nav .logo {
+    height: 45px !important;
+  }
+  .nav .logo img {
+    height: 35px;
+  }
+  .nav #toggle {
+    height: 45px !important;
+  }
+  .social div {
+    height: 45px !important;
+  }
+}
+
+.sidebar h1 {
+  color: #ba1419;
+}
+
+.sidebar .info {
+  padding: 1em;
+  height: 100%;
+  display: inline-block;
+  color: white;
+}
+
+.info ul {
+  padding: 0;
+  height: 100%;
+  display: inline-block;
+  color: white;
+}
+
+.info li {
+  margin-bottom: 1em;
+  list-style-type: none;
+}
+.info li a {
+  color: #ba1419;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.sidebar .nav {
+  grid-column-start: 2;
+  height: 100%;
+  background-color: #333;
+  display: inline-block;
+}
+
+.nav .logo {
+  height: 100px;
+  background-color: #ba1419;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .logo img {
+  filter: saturate(0%) brightness(0);
+}
+
+.nav #toggle {
+  background-color: #111;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ba1419;
+}
+
+.social a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* .social a:hover {
+  color: #ba1419;
+} */
+
+.social div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  height: 100px;
+  text-align: center;
+  color: black;
+}
+
+.social div:hover {
+background-color: #ba1419;
+}
+
+.sidebar-hide {
+  margin-left: -300px;
+}

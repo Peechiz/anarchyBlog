@@ -1,0 +1,59 @@
+main {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "content hero";
+  color: white;
+}
+/* main::-webkit-scrollbar {
+  display: none;
+} */
+
+@media (max-width: 1221px) {
+  main {
+    display: grid;
+    grid-template-rows: 1fr 1.7fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "content"
+  }
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url('http://placecage.com/800/800');
+  background-size: cover;
+  filter: saturate(0%);
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.content-wrapper {
+  width: 87%;
+  position: absolute;
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.content h1 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ba1419;
+}
+
+.content h1 {
+  margin-bottom: 0;
+}

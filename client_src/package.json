@@ -1,0 +1,22 @@
+{
+  "name": "anarchy_front_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 3001",
+    "build": "next build",
+    "export": "npm run build && next export"
+  },
+  "author": "Chris Impicciche",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "isomorphic-unfetch": "^2.0.0",
+    "moment": "^2.22.2",
+    "next": "^6.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-markdown": "^3.3.4"
+  }
+}
