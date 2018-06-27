@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next -p 3001",
     "build": "next build",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export && cp -r out/* ../client/"
   },
   "author": "Chris Impicciche",
   "license": "ISC",

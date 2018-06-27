@@ -25,7 +25,7 @@ const Post = (props) => {
 Post.getInitialProps = async ({query}) => {
   const res = await fetch(`http://localhost:3000/api/posts?filter[where][id]=${query.id}`)
   const json = await res.json()
-  return json[0]
+  return json[0] || {}
 }
 
 export default Post
