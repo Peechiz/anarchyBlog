@@ -20,5 +20,5 @@ npm-debug.log
 design
 .next
 myData.json
-client/
+client
 out/
