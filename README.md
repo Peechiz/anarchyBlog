@@ -5,7 +5,7 @@ Made with [LoopBack](http://loopback.io) and [Next.js](https://github.com/zeit/n
 ### ToDo
 *features*
 - [x] Responsive sidebar
-- [ ] Blog renders / saves markdown
+- [x] Blog renders / saves markdown
 - [ ] hide/reveal animations
 - [x] blogroll grabs several most recent posts... (needs refactor)
 - [ ] ... and paginates the rest
