@@ -1,10 +1,12 @@
-{
+require('dotenv').config()
+
+module.exports = {
   "google-login": {
     "provider": "google",
     "module": "passport-google-oauth",
     "strategy": "OAuth2Strategy",
-    "clientID": "{google-client-id-1}",
-    "clientSecret": "{google-client-secret-1}",
+    "clientID": process.env.GOOGLE_CLIENT_ID,
+    "clientSecret": process.env.GOOGLE_CLIENT_SECRET,
     "callbackURL": "http://localhost:3000/auth/google/callback",
     "authPath": "/auth/google",
     "callbackPath": "/auth/google/callback",
