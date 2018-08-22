@@ -7,7 +7,7 @@ module.exports = {
     "strategy": "OAuth2Strategy",
     "clientID": process.env.GOOGLE_CLIENT_ID,
     "clientSecret": process.env.GOOGLE_CLIENT_SECRET,
-    "callbackURL": "http://localhost:3000/auth/google/callback",
+    "callbackURL": `http://localhost:${process.env.PORT}/auth/google/callback`,
     "authPath": "/auth/google",
     "callbackPath": "/auth/google/callback",
     "successRedirect": "/auth/account",
