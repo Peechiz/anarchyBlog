@@ -10,7 +10,7 @@ module.exports = {
     "callbackURL": `https://anarchy-blog.herokuapp.com/auth/google/callback`,
     "authPath": "/auth/google",
     "callbackPath": "/auth/google/callback",
-    "successRedirect": "/auth/account",
+    "successRedirect": "/admin",
     "scope": [
       "email",
       "profile"
