@@ -4,6 +4,8 @@ import ReactMarkdown from 'react-markdown'
 import Moment from 'moment'
 import '../css/post.css'
 
+const BASE_URL = process.env.BASE_URL || ''
+
 const Post = (props) => {
   const date = Moment().calendar(props.date)
   return (
@@ -23,7 +25,7 @@ const Post = (props) => {
 }
 
 Post.getInitialProps = async ({query}) => {
-  const res = await fetch(`http://localhost:3000/api/posts?filter[where][id]=${query.id}`)
+  const res = await fetch(`${BASE_URL}api/posts?filter[where][id]=${query.id}`)
   const json = await res.json()
   return json[0] || {}
 }
