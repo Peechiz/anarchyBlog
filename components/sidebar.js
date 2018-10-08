@@ -12,7 +12,7 @@ class Sidebar extends Component {
   }
 
   toggleActive() {
-    console.log('clicked!')
+    // console.log('clicked!')
     const currentState = this.state.active;
     this.setState({ active: !currentState })
   }
@@ -38,9 +38,11 @@ class Sidebar extends Component {
         </div>
 
         <div className="nav">
-          <div className="logo">
-            <img src="/static/img/logo.png" alt="logo" height="80" />
-          </div>
+          <a href="/">
+            <div className="logo">
+              <img src="/static/img/logo.png" alt="logo" height="80" />
+            </div>
+          </a>
           <div id="toggle" onClick={this.toggleActive}>
             <i className="fas fa-bars fa-2x"></i>
           </div>

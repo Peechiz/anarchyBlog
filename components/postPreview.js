@@ -3,7 +3,7 @@ import Moment from 'moment';
 
 const PostPreview = (props) => {
   const post = props.content
-  const date = Moment().calendar(post.date)
+  const date = Moment(post.date).fromNow();
   return (
     <div>
       <h1>
