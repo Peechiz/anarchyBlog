@@ -6,6 +6,18 @@
   font-size: 3em;
 }
 
+.post img {
+  /* border-left: 1px solid #ba1419;
+  border-top: 1px solid #ba1419; */
+  -webkit-box-shadow: -4px -4px 12px 0px rgba(186,20,25,0.6);
+  -moz-box-shadow: -4px -4px 12px 0px rgba(186,20,25,0.6);
+  box-shadow: -4px -4px 12px 0px rgba(186,20,25,0.6);
+}
+
+.date {
+  margin-top: 0;
+}
+
 .post h2 {
   font-weight: 100;
   /* margin: 0; */

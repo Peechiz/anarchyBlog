@@ -13,7 +13,7 @@ const Post = (props) => {
         <div className="content">
           <div className="content-wrapper post">
             <h1>{props.title}</h1>
-            <h2>{date}</h2>
+            <p className="date">posted {date}</p>
             {/* <h2>id: {props.id}</h2> */} 
 
             <ReactMarkdown source={props.text}/>
@@ -21,8 +21,6 @@ const Post = (props) => {
             <NextPost type="previous" id={props.prev}></NextPost>
             <NextPost type="next" id={props.next}></NextPost>
 
-            {/* { props.next ? <a href={`/post?id=${props.next}`}>Next</a> : null}
-            { props.prev ? <a href={`/post?id=${props.prev}`}>Previous</a> : null} */}
           </div>
         </div>
         <div className="hero"></div>
