@@ -6,29 +6,21 @@
     "node": ">=4"
   },
   "scripts": {
-    "lint": "eslint .",
-    "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "dev": "next"
   },
   "dependencies": {
-    "compression": "^1.0.3",
-    "cors": "^2.5.2",
+    "@zeit/next-css": "^1.0.1",
     "dotenv": "^6.0.0",
-    "helmet": "^3.10.0",
-    "loopback": "^3.19.0",
-    "loopback-boot": "^2.6.5",
-    "loopback-component-explorer": "^6.0.0",
-    "loopback-component-oauth2": "^3.2.0",
-    "loopback-component-passport": "^3.10.0",
-    "passport-google-oauth": "^1.0.0",
-    "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "firebase": "^5.5.3",
+    "firebase-admin": "^6.0.0",
+    "google-maps-react": "^2.0.2",
+    "moment": "^2.22.2",
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-markdown": "^4.0.2"
   },
-  "devDependencies": {
-    "eslint": "^3.17.1",
-    "eslint-config-loopback": "^8.0.0",
-    "nsp": "^3.2.1"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "",
     "url": ""

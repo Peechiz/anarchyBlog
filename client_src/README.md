@@ -1,1 +1,0 @@
-The `client_src` folder requires an `.env` file with `BASE_URL=http://localhost:3000/` for dev purposes
